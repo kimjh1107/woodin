@@ -1,0 +1,282 @@
+    *{margin: 0; padding: 0;}
+        .outbox{ width: 100%; position: absolute;}
+        .nav{
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            z-index: 10;
+            display: grid;
+            grid-template-columns: repeat(4,25%);
+            justify-content: center;
+            align-items: center;
+            grid-template-rows: 100%;
+            gap: 20px;
+        }
+        .logo{ color: black; font-size: 30px; text-align: right;margin-right: 50pt;}
+        .menu{
+            grid-column: 2/4;
+            display: grid;
+            grid-template-columns: repeat(4,15%) ;
+            text-align: center;
+            gap: 15px;
+        }
+        .icon{ margin-left: 50px; display: grid; grid-template-columns: repeat(4,10%); text-align: right;}
+        .frbox{
+            width: 90%;
+            height:650px;
+            margin: auto;
+            margin-top: 100px;
+            background-image: url(/img/mdhouse.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 25px;
+        }
+        .frtext{
+            width: 500px;
+            color: white;
+            text-align: center;
+            margin: auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            text-shadow: 0px 0px 3px black;
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
+        h1{
+            font-size: 30px;
+            text-shadow: 0px 0px 3px black;
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            color: white;
+        }
+
+
+        .stbox{
+            width: 100%;
+            height: 850px;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            align-items: center;
+            margin-top: 50px;
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            background-color: lightgray;
+        }
+        .stText{
+            width: 40%;
+            height: 100%;
+            color: black;
+            text-align: center;
+            align-content: center;
+        }
+        .stText div{
+            width: 20%;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .stText h1{
+            text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+            color: black;
+            font-size: 50px;
+            font-weight: 200;
+        }
+        .stmini{
+            width: 40%;
+            height: 80%;
+            background-image: url(/img/mdhouse2.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 30px;
+        }
+
+
+
+        .thbox{
+            width: 100%;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nop{position: absolute; width: 100%;}
+        .thText{
+            position: relative;
+            text-align: center;
+            bottom: 15%;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .thText.on{
+            opacity: 1;
+            bottom: 25%;
+        }
+        .thgrlid{
+            position: absolute;
+            width: 90%;
+            height: 630px;
+            display: grid;
+            grid-template-columns: repeat(4,24%) ;
+            justify-content: center;
+            grid-template-rows: 250px 250px;
+            gap: 30px;
+        }
+        .thgrlid>div{
+            transition: all 0.5s;
+        }
+        .thgrlid>div:hover{
+            background-size: 150% auto;
+        }
+        .th1{border-radius: 25px; 
+            background-image: url(/img/door.jpg);
+            background-size: 140% auto;
+            background-position: center;
+        }
+        .th2{
+            position: relative;
+            top: 50px;
+            grid-column: 2/4;
+        }
+        .thtest{
+            font-size: 60px;
+            font-weight: 200;
+            margin: 15px;
+        }
+        .th3{border-radius: 25px;
+            background-image: url(/img/middoor.jpg);
+            background-size: 140% auto;
+            background-position: center;}
+        .th4{border-radius: 25px;
+            background-image: url(/img/sheet.jpg);
+            background-size: 140% auto;
+            background-position: center;}
+        .th5{border-radius: 25px;
+            background-image: url(/img/board.jpg);
+            background-size: 140% auto;
+            background-position: center;}
+        .th6{border-radius: 25px;
+            background-image: url(/img/window.jpg);
+            background-size: 140% auto;
+            background-position: center;}
+        .th7{border-radius: 25px;
+            background-image: url(/img/wood.jpg);
+            background-size: 140% auto;
+            background-position: center;
+            transition: all 5s;}
+        .b{
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+            transition: 0.3s;
+            color: white;
+            text-align: center;
+            line-height: 280px;
+            text-shadow: 0px 0px 5px black;
+        }
+        .b:hover{
+            background-color: rgba(0, 0, 0, 0.566);
+        }
+        @media(min-width:1025px){}
+        @media (min-width:769px) and (max-width:1024px) {
+
+            .stbox{
+                width: 100%;
+                height:1000px;
+                margin-top: 50px;
+                font-family: "Raleway", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                background-color: lightgray;
+                display: block;
+            }
+            .stText{
+                width: 80%;
+                height: 10%;
+                color: black;
+                text-align: center;
+                align-content: center;
+                margin: auto;
+                margin-top: 5%;
+            }
+            .stmini{
+                width: 80%;
+                height: 50%;
+                margin: auto;
+                margin-top: 30%;
+                background-image: url(../img/room.jpg);
+                background-position: center;
+                background-size: cover;
+                border-radius: 30px;
+            }
+
+            .thgrlid{
+                position: absolute;
+                width: 90%;
+                height: 630px;
+                display: grid;
+                grid-template-columns: repeat(2,48%) ;
+                justify-content: center;
+                grid-template-rows: 200px 200px 200px 200px;
+                gap: 30px;
+                bottom: -10%;
+            }
+            .th2{display: none;}
+        }
+        @media(max-width:768px){
+
+            .stbox{
+                width: 100%;
+                height:900px;
+                margin-top: 50px;
+                font-family: "Raleway", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                background-color: lightgray;
+                display: block;
+            }
+            .stText{
+                width: 80%;
+                height: 10%;
+                color: black;
+                text-align: center;
+                align-content: center;
+                margin: auto;
+                margin-top: 3%;
+            }
+            .stmini{
+                width: 80%;
+                height: 50%;
+                margin: auto;
+                margin-top: 40%;
+                background-image: url(../img/room.jpg);
+                background-position: center;
+                background-size: cover;
+                border-radius: 30px;
+            }
+
+            .thgrlid{
+                position: absolute;
+                width: 90%;
+                height: 630px;
+                display: grid;
+                grid-template-columns: repeat(2,48%) ;
+                justify-content: center;
+                grid-template-rows: 200px 200px 200px 200px;
+                gap: 30px;
+                bottom: -10%;
+            }
+            .th2{display: none;}
+        }
